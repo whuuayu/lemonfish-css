@@ -1,26 +1,37 @@
 /*Last Updated 2021-11-14*/
 
+/*Section I: Frame*/
+
 * {
     font-family: gamefont, jp;
 }
 
-#aHolder, #endAContainer {
+a {
+    color: var(--accent);
+}
+
+#aHolder, #endAContainer, #newsHolder, #seasonLabel, #ot-sdk-btn-floating.ot-floating-button {
     display: none !important;
 }
 
-#newsHolder {
-    display: none;
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: var(--accent);
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.6);
+    box-shadow: none;
 }
 
-#seasonLabel {
-    display: none;
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    border-radius: 0px;
+    background-color: transparent;
 }
 
-#ot-sdk-btn-floating.ot-floating-button {
-    display: none !important;
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-/**/
+/*Section II: Chat*/
 
 #uiBase.onMenu #chatHolder {
     left: 50%;
@@ -140,7 +151,7 @@ div:last-child .chatItem {
     color: #fff;
 }
 
-/**/
+/*Section III: Main Menu*/
 
 #tlInfHold {
     display: none !important;
@@ -161,6 +172,8 @@ div:last-child .chatItem {
 #instructions {
     display: none;
 }
+
+/*Header Area*/
 
 .headerBarLeft {
     background-color: transparent;
@@ -249,6 +262,8 @@ input:checked+.sliderSml {
     opacity: 1;
     background-color: transparent;
 }
+
+/*Menu Buttons*/
 
 #subLogoButtons {
     bottom: unset;
@@ -376,6 +391,8 @@ input:checked+.sliderSml {
     font-size: 40px;
 }
 
+/*Class Container*/
+
 #menuClassContainer {
     transform: unset;
     right: 40px;
@@ -468,7 +485,156 @@ input:checked+.sliderSml {
     display: none;
 }
 
-/**/
+/*Menu Window*/
+
+#windowHolder {
+    background-image: linear-gradient(90deg, transparent calc(100% - 140px), var(--accent)calc(100% - 140px));
+    backdrop-filter: blur(4px);
+}
+
+#windowHeader {
+    display: block;
+    font-size: 64px;
+    position: fixed;
+    left: calc(100% - 28px);
+    top: 52px;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    width: max-content;
+    color: #000;
+}
+
+#menuWindow {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(100% - 242px) !important;
+    transform: unset !important;
+    max-height: unset;
+    background-color: transparent !important;
+    padding: 52px;
+    box-shadow: none !important;
+    direction: rtl;
+}
+
+#menuWindow * {
+    direction: ltr;
+}
+
+.setHed {
+    font-size: 32px;
+    text-transform: uppercase;
+    border: none;
+    padding: 8px 12px;
+    padding-bottom: 4px;
+}
+
+.setBodH {
+    padding: 0 12px;
+}
+
+#profilePicM~.setBodH {
+    padding: 0 12px !important;
+    width: calc(100% - 240px) !important;
+    margin-bottom: 0;
+    margin-left: 0 !important;
+}
+
+.settName, .settNameSmall {
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+.bigMenTabs {
+    background-color: rgba(80,80,80);
+    border-radius: 0;
+}
+
+.bigMenTab {
+    padding: 8px 12px;
+    padding-bottom: 4px;
+    line-height: unset;
+    border-width: 0;
+}
+
+.bigMenTabs .material-icons {
+    vertical-align: sub !important;
+    color: var(--accent) !important;
+    font-size: 36px !important;
+}
+
+.bigMenTab[style*="16px"] {
+    font-size: 32px !important;
+}
+
+#menuWindow div[style*="105%"] {
+    width: 100% !important;
+}
+
+.pSt {
+    padding: 0 12px;
+    border: none;
+    font-size: 32px;
+    width: -webkit-fill-available;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 0;
+    text-shadow: none !important;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.pSt strong {
+    font-size: 32px;
+    color: var(--accent);
+}
+
+.xpBar {
+    padding: 0;
+    min-height: 48px;
+    width: 100%;
+}
+
+.xpBarB {
+    background-image: none;
+    background-color: var(--accent);
+}
+
+.xpBarV {
+    text-shadow: none;
+    color: #000;
+    text-align: left;
+    left: 12px;
+    top: 10px;
+    font-size: 32px;
+}
+
+.xpBarV::after {
+    content: " EXP";
+}
+
+#profilePicM {
+    width: 160px;
+    height: 160px;
+}
+
+
+/*Account*/
+
+.accountInput {
+    padding: 8px 12px;
+    font-size: 24px;
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom: 4px solid #fff;
+}
+
+.menuLink {
+    padding: 0 12px;
+    font-size: 32px;
+}
+
+/*Section IV: HUD*/
 
 #uiBase.onGame #chatList, #healthValue, #ammoVal, #topRight *, #topLeftHolder * {
     text-shadow: var(--hud-text-shadow);
@@ -820,7 +986,7 @@ input:checked+.sliderSml {
     display: none;
 }
 
-/**/
+/*Section V: Spectate UI*/
 
 #uiBase.onMenu #spectateUI {
     display: block !important;
@@ -869,7 +1035,7 @@ input:checked+.sliderSml {
     margin-top: 10px !important;
 }
 
-/**/
+/*Section VI: Comp*/
 
 .cmpTmHed {
     text-shadow: none;
@@ -899,7 +1065,7 @@ input:checked+.sliderSml {
     text-shadow: none;
 }
 
-/**/
+/*Section VII: Clients*/
 
 #menuTimer {
     display: none;
