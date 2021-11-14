@@ -544,6 +544,7 @@ input:checked+.sliderSml {
 .settName, .settNameSmall {
     font-size: 32px;
     padding-bottom: 8px;
+    color: #fff !important;
 }
 
 .bigMenTabs {
