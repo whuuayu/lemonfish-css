@@ -556,10 +556,11 @@ input:checked+.sliderSml {
     padding: 8px 12px;
     padding-bottom: 4px;
     line-height: unset;
+    font-size: 32px !important;
     border-width: 0;
 }
 
-.bigMenTabs .material-icons {
+.bigMenTabs .material-icons, .bigMenTabs .material-icons-outlined {
     vertical-align: sub !important;
     color: var(--accent) !important;
     font-size: 36px !important;
