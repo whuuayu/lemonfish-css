@@ -1,4 +1,4 @@
-/*Last Updated 2021-11-14*/
+/*Last Updated 2021-11-15*/
 
 /*Section I: Frame*/
 
@@ -715,6 +715,27 @@ input:checked+.sliderSml {
 
 /*Loadout*/
 
+#loadoutSelect {
+    padding: 8px !important;
+    padding-bottom: 4px !important;
+    font-size: 16px;
+    border-radius: 0 !important;
+    background-color: var(--accent) !important;
+}
+
+#loadoutName {
+    padding: 8px !important;
+    padding-bottom: 6px !important;
+    border-radius: 0;
+    font-size: 16px;
+    margin-top: 6px !important;
+}
+
+#loadoutHolder>.settNameSmall {
+    border: none !important;
+    padding: 0 !important;
+}
+
 #customizeContainer {
     width: calc(100% - 190px);
 }
@@ -755,25 +776,19 @@ input:checked+.sliderSml {
     float: right;
 }
 
-#loadoutSelect {
-    padding: 8px !important;
-    padding-bottom: 4px !important;
-    font-size: 16px;
-    border-radius: 0 !important;
-    background-color: var(--accent) !important;
+.selRandom {
+    left: unset;
+    right: 12px;
+    transform: translateY(-50%);
+    text-shadow: none;
+    font-size: 0;
 }
 
-#loadoutName {
-    padding: 8px !important;
-    padding-bottom: 6px !important;
-    border-radius: 0;
-    font-size: 16px;
-    margin-top: 6px !important;
-}
-
-#loadoutHolder>.settNameSmall {
-    border: none !important;
-    padding: 0 !important;
+.selRandom::after {
+    content: "✕";
+    font-size: 48px;
+    -webkit-text-stroke: 8px;
+    color: var(--accent);
 }
 
 .classCard {
