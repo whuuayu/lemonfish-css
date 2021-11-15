@@ -927,6 +927,14 @@ input:checked+.sliderSml {
 
 /*Account*/
 
+.button.lgn {
+    width: unset !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: transparent;
+}
+
 .accountInput {
     padding: 8px 12px;
     font-size: 24px;
