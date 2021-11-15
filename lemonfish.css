@@ -732,8 +732,37 @@ input:checked+.sliderSml {
     padding: 0 !important;
 }
 
+#selectorContainer {
+    background-color: transparent;
+    margin: 0;
+}
+
+.selectorItem {
+    border: none !important;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.selectorItem:hover {
+    background-color: transparent;
+}
+
+.selectorIcon, .selectorLabel {
+    filter: none !important;
+    text-shadow: none !important;
+}
+
+.selectorLabel {
+    font-size: 32px;
+    transition-duration: 0.25s;
+}
+
+.selectorItem:hover .selectorLabel {
+    color: var(--accent) !important;
+}
+
 #customizeContainer {
-    width: calc(100% - 190px);
+    width: calc(100% - 210px);
 }
 
 .custContainer {
