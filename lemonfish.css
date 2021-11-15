@@ -662,10 +662,6 @@ input:checked+.sliderSml {
     font-size: 32px !important;
 }
 
-#menuWindow div[style*="105%"] {
-    width: 100% !important;
-}
-
 .pSt {
     padding: 0 12px;
     border: none;
@@ -925,6 +921,16 @@ input:checked+.sliderSml {
     height: 54px;
 }
 
+/*Store*/
+
+.bigMFeatHold {
+    width: 100% !important;
+}
+
+#menuWindow div[style*="105%"] {
+    width: 100% !important;
+}
+
 /*Account*/
 
 .button.lgn {
@@ -941,6 +947,14 @@ input:checked+.sliderSml {
     background-color: transparent;
     border-radius: 0;
     border-bottom: 4px solid #fff;
+}
+
+.accBtn {
+    border: none !important;
+    background-color: transparent;
+    font-size: 32px !important;
+    height: unset !important;
+    line-height: unset !important;
 }
 
 .menuLink {
