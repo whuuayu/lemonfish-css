@@ -1386,7 +1386,7 @@ input[type=color] {
 }
 
 .kfItem {
-	padding: 0;
+	padding: 0 12px;
     margin-bottom: 8px;
 	color: #fff;
 	font-size: 24px;
