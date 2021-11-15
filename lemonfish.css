@@ -984,7 +984,7 @@ input:checked+.sliderSml {
 }
 
 .weapIcon[src*="icon_2"] {
-    content: url(https://api.iconify.design/mdi/menu.svg?color=white);
+    content: url(https://api.iconify.design/mdi/dots-horizontal.svg?color=white);
 }
 
 .weapIcon[src*="icon_3"], .weapIcon[src*="icon_11"], .weapIcon[src*="icon_17"] {
@@ -1004,11 +1004,11 @@ input:checked+.sliderSml {
 }
 
 .weapIcon[src*="icon_7"] {
-    content: url(https://api.iconify.design/mdi/reorder-vertical.svg?color=white);
+    content: url(https://api.iconify.design/mdi/steering.svg?color=white);
 }
 
 .weapIcon[src*="icon_8"] {
-    content: url(https://api.iconify.design/mdi/bullseye.svg?color=white);
+    content: url(https://api.iconify.design/mdi/percent.svg?color=white);
 }
 
 .weapIcon[src*="icon_9"] {
@@ -1024,11 +1024,11 @@ input:checked+.sliderSml {
 }
 
 .weapIcon[src*="icon_14"] {
-    content: url(https://api.iconify.design/mdi/bow-arrow.svg?color=white);
+    content: url(https://api.iconify.design/mdi/arrow-projectile-multiple.svg?color=white);
 }
 
 .weapIcon[src*="icon_15"] {
-    content: url(https://api.iconify.design/mdi/dots-vertical.svg?color=white);
+    content: url(https://api.iconify.design/mdi/focus-field-vertical.svg?color=white);
 }
 
 .weapIcon[src*="icon_16"] {
