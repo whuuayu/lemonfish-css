@@ -801,7 +801,7 @@ input:checked+.sliderSml {
 }
 
 .chalRight {
-    width: calc(100% - 380px);
+    width: calc(100% - 420px);
 }
 
 .chalXPBar {
