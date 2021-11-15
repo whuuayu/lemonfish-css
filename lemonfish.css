@@ -1385,6 +1385,26 @@ input[type=color] {
     width: 20px;
 }
 
+.kfItem {
+	padding: 0;
+    margin-bottom: 8px;
+	color: #fff;
+	font-size: 24px;
+	background-color: transparent;
+}
+
+.kfMsg {
+	color: #fff;;
+}
+
+.kfMsg span[style*="#eb5656"] {
+    color: var(--enemy) !important;
+}
+
+.kfMsg span[style*="#9eeb56"] {
+    color: var(--friendly) !important;
+}
+
 .roundScrV {
     background-color: transparent;
     line-height: unset;
