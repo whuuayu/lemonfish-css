@@ -1206,6 +1206,13 @@ input[type=color] {
     background-color: transparent;
 }
 
+#reloadMsg {
+    bottom: 200px;
+    border: none;
+    background-color: transparent;
+    text-shadow: var(--hud-text-shadow);
+}
+
 .weapIcon {
     margin: 0 !important;
     height: 64px;
