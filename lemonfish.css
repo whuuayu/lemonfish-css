@@ -1375,6 +1375,15 @@ input[type=color] {
     color: var(--enemy);
 }
 
+.newLeaderContainer {
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 0;
+}
+
+.newLeaderItem {
+    font-size: 24px;
+}
+
 .countIcon {
     font-size: 24px;
     background-color: transparent;
