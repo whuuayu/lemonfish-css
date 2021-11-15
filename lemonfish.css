@@ -752,6 +752,12 @@ input:checked+.sliderSml {
     text-shadow: none !important;
 }
 
+.selectorItem .selectorIcon {
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+}
+
 .selectorLabel {
     font-size: 32px;
     transition-duration: 0.25s;
