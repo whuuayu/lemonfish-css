@@ -6,12 +6,8 @@
     font-family: gamefont, jp, dv;
 }
 
-a {
+a, a:active, a:visited {
     color: var(--accent);
-}
-
-#aHolder, #endAContainer, #newsHolder, #seasonLabel, #ot-sdk-btn-floating.ot-floating-button {
-    display: none !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -29,6 +25,21 @@ a {
 
 ::-webkit-scrollbar {
     width: 8px;
+}
+
+#aHolder, #endAContainer, #newsHolder, #seasonLabel, #ot-sdk-btn-floating.ot-floating-button {
+    display: none !important;
+}
+
+/*Animations*/
+
+@keyframes menuWindow {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /*Section II: Chat*/
@@ -173,6 +184,10 @@ div:last-child .chatItem {
     display: none;
 }
 
+#instructionsUpdate {
+    background-color: transparent;
+}
+
 /*Header Area*/
 
 .headerBarLeft {
@@ -198,6 +213,11 @@ div:last-child .chatItem {
 #menuJNKCount .material-icons {
     font-size: 24px !important;
     vertical-align: middle !important;
+}
+
+#mailCount {
+    background-color: var(--bad);
+    border: none;
 }
 
 .headerBar div {
@@ -236,7 +256,7 @@ div:last-child .chatItem {
 }
 
 .sliderSml::before {
-    content: "play_arrow";
+    content: "visibility_off";
     font-size: 44px;
     color: #fff;
     width: max-content;
@@ -486,6 +506,41 @@ input:checked+.sliderSml {
     display: none;
 }
 
+#termsInfo {
+    background-color: transparent;
+}
+
+.terms {
+    font-size: 24px;
+}
+
+.verticalSeparatorInline {
+    height: 40px;
+}
+
+/*Popups*/
+
+#twitchPop, #confPop, #clientExitPop, #confPurchItemPop {
+    border: none;
+    border-radius: 0;
+}
+
+#confirmBtn {
+    background-color: var(--good);
+    border-radius: 0;
+    font-size: 32px;
+    height: 32px;
+    line-height: 36px;
+}
+
+#declineBtn {
+    background-color: var(--bad);
+    border-radius: 0;
+    font-size: 32px;
+    height: 32px;
+    line-height: 36px;
+}
+
 /*Menu Window*/
 
 #windowHolder {
@@ -503,6 +558,43 @@ input:checked+.sliderSml {
     transform-origin: left top;
     width: max-content;
     color: #000;
+}
+
+#windowHolder::after {
+    content: "✕";
+    position: absolute;
+    bottom: 52px;
+    right: 52px;
+    font-size: 48px;
+    -webkit-text-stroke: 8px;
+}
+
+#windowHolder {
+    content: " ";
+    position: fixed;
+    display: block !important;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0;
+}
+
+#windowHolder[style*="display: block;"] {
+    position: fixed;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    animation: menuWindow 0.5s;
+    opacity: 1;
+}
+
+#windowHolder[style*="display: none;"] {
+    width: 0%;
+}
+
+#windowHolder[style*="display: none;"] * {
+    pointer-events: none;
 }
 
 #menuWindow {
@@ -621,6 +713,132 @@ input:checked+.sliderSml {
     height: 160px;
 }
 
+/*Loadout*/
+
+.classCard {
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+    width: 33.333%;
+    height: 240px;
+    text-shadow: none;
+}
+
+.classImgC {
+    width: unset;
+    height: 160px;
+    border-radius: 0;
+}
+
+.classXPBar {
+    width: 160px;
+    border-radius: 0;
+    height: 8px;
+    bottom: 22px;
+    top: unset;
+    left: calc(50% - 80px);
+}
+
+.clsXPBarC {
+    margin: 0;
+    height: 8px;
+    background-color: var(--accent);
+}
+
+.classHP {
+    left: calc(50% - 80px);
+    top: unset;
+    bottom: 32px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.75);
+    text-shadow: 20px;
+}
+
+.classHP span {
+    color: #fff !important;
+    font-size: 20px !important;
+}
+
+.classLvl {
+    top: unset;
+    bottom: 32px;
+    right: calc(50% - 80px);
+    text-shadow: 0 0 4px rgba(0,0,0,0.75);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*Challenges*/
+
+.challHeadrI {
+    border-radius: 0;
+    border: none;
+    width: 100%;
+}
+
+.challMapCrd {
+    width: 25%;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.chalCard {
+    border-radius: 0 !important;
+    border: none !important;
+    width: -webkit-fill-available;
+    background-color: rgba(80,80,80) !important;
+    padding: 12px;
+    box-shadow: none !important;
+    height: 126px;
+}
+
+.chalImgC {
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    width: 118px;
+    height: 118px;
+}
+
+.chalRight {
+    width: calc(100% - 380px);
+}
+
+.chalXPBar {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    height: 50px;
+}
+
+.chalXPBarC {
+    display: none;
+}
+
+.chalXPVal {
+    font-size: 32px;
+    text-shadow: none;
+    line-height: 52px;
+    text-align: left;
+    color: var(--accent) !important;
+}
+
+.challComplB {
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.chalRews {
+    height: 240px;
+    width: 240px;
+}
+
+.chalRewSkn {
+    border: none;
+    border-radius: 0;
+    width: 54px;
+    height: 54px;
+}
 
 /*Account*/
 
