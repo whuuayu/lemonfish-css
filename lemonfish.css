@@ -311,6 +311,11 @@ div:last-child .chatItem {
     display: none;
 }
 
+#menuAccountUsername {
+    position: relative;
+    top: 4px;
+}
+
 #menuKRCount, #menuJNKCount {
     color: #fff;
 }
