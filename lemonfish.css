@@ -42,6 +42,101 @@ a, a:active, a:visited {
     }
 }
 
+@keyframes loader {
+    30% { 
+        transform: scale(1.2);
+    }
+    40%, 60% {
+        transform: rotate(-20deg) scale(1.2);
+    }
+    50% {
+        transform: rotate(20deg) scale(1.2);
+    }
+    70% {
+        transform: rotate(0deg) scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Loading Screen*/
+
+#initLoader {
+    background-color: rgba(80,80,80);
+}
+
+#loadEditrBtn {
+    display: none;
+}
+
+#loadTipsHolder {
+    bottom: unset;
+    top: 128px;
+    width: unset;
+    font-size: 0;
+}
+
+#loadTipsHolder::before {
+    content: "LEMONFISH";
+    font-size: 128px;
+    color: rgba(80,80,80);
+    background-color: var(--accent);
+    padding: 0 32px;
+    padding-top: 12px;
+}
+
+#loadTipsHolder::after {
+    content: "a css by tae";
+    font-size: 32px;
+    color: rgba(80,80,80);
+    position: absolute;
+    right: 36px;
+    bottom: 4px;
+}
+
+#loadTipsHolder span {
+    display: none;
+}
+
+#loadGamNm {
+    font-size: 32px;
+    color: #fff;
+}
+
+.lC-cube {
+    display: none;
+}
+
+#loadInfoLHolder {
+    font-size: 0;
+    color: #fff;
+}
+
+#loadInfoLHolder::before {
+    content: "Last Updated 2021-11-16";
+    font-size: 32px;
+}
+
+#lC-cont::before {
+    content: " ";
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: var(--accent);
+    animation: loader 2s ease infinite;
+}
+
+#loadInfoRHolder {
+    font-size: 0;
+    color: #fff;
+}
+
+#loadInfoRHolder::before {
+    content: "IGN: びこ ・ twitter: @whuuayu";
+    font-size: 32px;
+}
+
 /*Section II: Chat*/
 
 #uiBase.onMenu #chatHolder {
