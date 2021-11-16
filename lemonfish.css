@@ -1682,8 +1682,17 @@ input[type=color] {
 
 .endCard {
     border-radius: 0;
-    background-color: rgba(0,0,0,0.75);
-    padding: 12px;
+    padding: 16px;
+}
+
+.tabHeader {
+    font-size: 24px;
+    color: #fff;
+}
+
+.tabHeader.selected {
+    color: var(--accent);
+    border-color: var(--accent);
 }
 
 #endTable {
@@ -1692,6 +1701,19 @@ input[type=color] {
 
 #endTable span[style="color:#F8C55C"] {
     color: var(--accent) !important;
+}
+
+th, tr {
+    border-bottom: 4px solid #fff;
+}
+
+th {
+    font-size: 24px;
+}
+
+td {
+    color: rgba(255,255,255,.7);
+    font-size: 24px;
 }
 
 /*Section V: Spectate UI*/
