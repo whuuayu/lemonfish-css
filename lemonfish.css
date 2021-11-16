@@ -898,6 +898,13 @@ input:checked+.sliderSml {
     border-radius: 0;
 }
 
+.challRotImg {
+    transform: unset;
+    border: none !important;
+    background-size: cover !important;
+    background-position: center;
+}
+
 .chalCard {
     border-radius: 0 !important;
     border: none !important;
