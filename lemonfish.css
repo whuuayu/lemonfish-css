@@ -1642,7 +1642,7 @@ input[type=color] {
     backdrop-filter: grayscale(1) blur(4px);
 }
 
-#victorySubHolder {
+#uiBase.onEndScrn #victorySubHolder {
     top: 0;
     width: 140px;
     height: 100%;
