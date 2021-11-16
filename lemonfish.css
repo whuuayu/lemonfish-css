@@ -125,6 +125,10 @@ a, a:active, a:visited {
     height: 48px;
     background-color: var(--accent);
     animation: loader 2s ease infinite;
+    background-image: url(https://api.iconify.design/fa-solid/fish.svg?color=%23444);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #loadInfoRHolder {
