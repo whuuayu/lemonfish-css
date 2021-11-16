@@ -1260,7 +1260,7 @@ input[type=color] {
 }
 
 .weapIcon[src*="icon_6"] {
-    content: url(https://api.iconify.design/mdi/dots-grid.svg?color=white);
+    content: url(https://api.iconify.design/mdi/party-popper.svg?color=white);
 }
 
 .weapIcon[src*="icon_7"] {
@@ -1292,7 +1292,7 @@ input[type=color] {
 }
 
 .weapIcon[src*="icon_16"] {
-    content: url(https://api.iconify.design/mdi/transfer-up.svg?color=white);
+    content: url(https://api.iconify.design/mdi/party-popper.svg?color=white);
 }
 
 .weapIcon[src*="icon_18"] {
