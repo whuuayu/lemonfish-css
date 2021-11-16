@@ -1145,7 +1145,7 @@ input[type=color] {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0,0,0,0.25);
-    opacity: calc(var(--healthbar-opacity * 0.01));
+    opacity: calc(var(--healthbar-opacity) * 0.01);
 }
 
 .healthBarSeg {
