@@ -143,6 +143,11 @@ a, a:active, a:visited {
 
 /*Section II: Chat*/
 
+#chatHolder {
+    left: 208px;
+    bottom: 54px;
+}
+
 #uiBase.onMenu #chatHolder {
     left: 50%;
     bottom: 50px;
@@ -1512,7 +1517,7 @@ input[type=color] {
 }
 
 .newLeaderName, .leaderName, .endTableN[style*="#eb5656"] {
-    color: var(--enemy);
+    color: var(--enemy) !important;
 }
 
 .newLeaderContainer {
@@ -1628,6 +1633,60 @@ input[type=color] {
 
 #curGameInfo {
     display: none;
+}
+
+/*End Screen*/
+
+#endUI {
+    background-color: rgba(0,0,0,0.5) !important;
+    backdrop-filter: grayscale(1) blur(4px);
+}
+
+#victorySubHolder {
+    top: 0;
+    width: 140px;
+    height: 100%;
+    background-color: var(--accent);
+}
+
+#victorySub {
+    content: url(https://api.iconify.design/mdi/emoticon.svg);
+    width: 64px;
+    position: relative;
+    top: 54px;
+}
+
+#victorySub[src="./img/def.png"] {
+    content: url(https://api.iconify.design/mdi/emoticon-dead.svg);
+}
+
+#endTimer {
+    position: absolute;
+    right: calc(100% - 36px);
+    top: 200px;
+    width: max-content;
+    margin: 0;
+    color: #000;
+    font-style: normal;
+    line-height: unset;
+    font-size: 48px;
+    text-shadow: none;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+}
+
+.endCard {
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.75);
+    padding: 12px;
+}
+
+#endTable {
+    background-color: transparent;
+}
+
+#endTable span[style="color:#F8C55C"] {
+    color: var(--accent) !important;
 }
 
 /*Section V: Spectate UI*/
