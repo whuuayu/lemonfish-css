@@ -1279,6 +1279,13 @@ input[type=color] {
     content: url(https://api.iconify.design/mdi/scatter-plot.svg?color=white);
 }
 
+.weapIcon[src*="icon_11"] {
+    background: url(https://api.iconify.design/mdi/star.svg?color=white);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: -2px 8px;
+}
+
 .weapIcon[src*="icon_12"], .weapIcon[src*="icon_13"] {
     content: url(https://api.iconify.design/mdi/battery-high.svg?color=white);
 }
@@ -1293,6 +1300,13 @@ input[type=color] {
 
 .weapIcon[src*="icon_16"] {
     content: url(https://api.iconify.design/mdi/party-popper.svg?color=white);
+}
+
+.weapIcon[src*="icon_17"] {
+    background: url(https://api.iconify.design/mdi/magazine-pistol.svg?color=white&flip=horizontal);
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: -2px 24px;
 }
 
 .weapIcon[src*="icon_18"] {
@@ -1310,7 +1324,7 @@ input[type=color] {
 .weapIcon[src*="icon_22"] {
     content: url(https://api.iconify.design/mdi/gun.svg?color=white);
     background: url(https://api.iconify.design/mdi/magazine-pistol.svg?color=white&flip=horizontal);
-    background-size: 24px;
+    background-size: 40px;
     background-repeat: no-repeat;
     background-position: 20px 12px;
 }
