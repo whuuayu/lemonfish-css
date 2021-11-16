@@ -1808,6 +1808,7 @@ input[type=color] {
     bottom: -8px;
     left: unset;
     right: 0;
+    color: var(--health);
 }
 
 #specContr {
@@ -1821,6 +1822,10 @@ input[type=color] {
 .specContrI {
     color: #fff;
     text-shadow: var(--hud-text-shadow);
+}
+
+.specContrI span {
+    color: var(--accent) !important;
 }
 
 #specTimer {
