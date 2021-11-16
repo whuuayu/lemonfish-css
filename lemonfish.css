@@ -143,11 +143,6 @@ a, a:active, a:visited {
 
 /*Section II: Chat*/
 
-#uiBase.onEndScrn #chatHolder {
-    left: 208px;
-    bottom: 54px;
-}
-
 #uiBase.onMenu #chatHolder {
     left: 50%;
     bottom: 50px;
@@ -158,6 +153,11 @@ a, a:active, a:visited {
 #uiBase.onGame #chatHolder {
     left: 52px !important;
     bottom: 70px !important;
+}
+
+#uiBase.onEndScrn #chatHolder {
+    left: 208px !important;
+    bottom: 54px !important;
 }
 
 #chatList {
