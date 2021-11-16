@@ -1280,9 +1280,9 @@ input[type=color] {
 }
 
 .weapIcon[src*="icon_11"] {
-    background: url(https://api.iconify.design/mdi/star.svg?color=white);
+    background: url(https://api.iconify.design/mdi/bird.svg?color=white);
     background-repeat: no-repeat;
-    background-size: 32px;
+    background-size: 24px;
     background-position: -2px 8px;
 }
 
