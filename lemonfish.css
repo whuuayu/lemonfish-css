@@ -1697,6 +1697,7 @@ input[type=color] {
 
 #endTable {
     background-color: transparent;
+    padding: 0;
 }
 
 #endTable span[style="color:#F8C55C"] {
