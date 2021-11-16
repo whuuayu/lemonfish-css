@@ -1342,6 +1342,19 @@ input[type=color] {
     content: url(https://api.iconify.design/mdi/boxing-glove.svg?color=white) !important;
 }
 
+#killStreakHolder {
+    position: fixed;
+    bottom: 70px;
+    right: 180px;
+    margin: 0;
+}
+
+.killStreakItem {
+    height: 94px;
+    width: 94px;
+    background-color: transparent;
+}
+
 #timerDisplay {
     position: fixed;
     left: 50%;
