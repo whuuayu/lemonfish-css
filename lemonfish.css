@@ -63,7 +63,7 @@ a, a:active, a:visited {
 /*Loading Screen*/
 
 #initLoader {
-    background-color: rgba(80,80,80);
+    background-color: #444;
 }
 
 #loadEditrBtn {
@@ -80,7 +80,7 @@ a, a:active, a:visited {
 #loadTipsHolder::before {
     content: "LEMONFISH";
     font-size: 128px;
-    color: rgba(80,80,80);
+    color: #444;
     background-color: var(--accent);
     padding: 0 32px;
     padding-top: 12px;
@@ -89,7 +89,7 @@ a, a:active, a:visited {
 #loadTipsHolder::after {
     content: "a css by tae";
     font-size: 32px;
-    color: rgba(80,80,80);
+    color: #444;
     position: absolute;
     right: 36px;
     bottom: 4px;
