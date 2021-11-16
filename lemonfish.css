@@ -1396,9 +1396,10 @@ input[type=color] {
 
 .kfItem {
 	padding: 0 12px;
-    margin-bottom: 8px;
+    	margin-bottom: 8px;
 	color: #fff;
 	font-size: 24px;
+	text-shadow: var(--hud-text-shadow);
 	background-color: transparent;
 }
 
