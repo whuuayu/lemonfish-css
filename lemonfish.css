@@ -1717,7 +1717,7 @@ input[type=color] {
     margin: 0 !important;
 }
 
-#specTimer {
+#uiBase.onMenu #specTimer {
     background-color: transparent;
     padding: 0;
     font-size: 64px !important;
@@ -1736,6 +1736,101 @@ input[type=color] {
 #uiBase.onMenu #specGameInfo {
     font-size: 48px !important;
     margin-top: 10px !important;
+}
+
+#uiBase.onSpect #spectateHUD {
+    text-shadow: var(--hud-text-shadow);
+    top: 64px;
+}
+
+.spectateInfo {
+    position: relative;
+    top: 12px;
+}
+
+#uiBase.onSpect #specTimer {
+    text-shadow: var(--hud-text-shadow);
+}
+
+#specNames {
+    padding: 0;
+    font-size: 32px;
+    display: block !important;
+    left: 52px;
+    top: 52px;
+    background-color: transparent;
+    text-shadow: var(--hud-text-shadow);
+}
+
+#specStats {
+    left: 50%;
+    top: unset;
+    bottom: 72px;
+    padding: 0;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+
+.specPHead {
+    text-shadow: var(--hud-text-shadow);
+}
+
+.specLevelBox {
+    vertical-align: baseline;
+    padding-bottom: 0;
+}
+
+.spectPIcon {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+
+.specFlag~div {
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 12px;
+}
+
+#spectHPB {
+    background-color: transparent;
+}
+
+#spectHPBI {
+    display: none;
+}
+
+#spectHPV {
+    font-size: 32px;
+    text-shadow: var(--hud-text-shadow);
+    top: unset;
+    bottom: -8px;
+    left: unset;
+    right: 0;
+}
+
+#specContr {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    right: 52px;
+    bottom: 64px;
+}
+
+.specContrI {
+    color: #fff;
+    text-shadow: var(--hud-text-shadow);
+}
+
+#specTimer {
+    background-color: transparent;
+    padding: 0;
+    font-size: 64px !important;
+    min-width: unset !important;
+    position: initial !important;
+    transform: unset !important;
+    padding: 0 !important;
 }
 
 /*Section VI: Comp*/
