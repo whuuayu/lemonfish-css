@@ -1642,11 +1642,16 @@ input[type=color] {
 .countIcon {
     font-size: 24px;
     background-color: transparent;
+    color: #fff;
 }
 
 #killsIcon, #deathsIcon, #streakIcon, #kdIcon {
     height: 20px;
     width: 20px;
+}
+
+.countIcon i {
+    font-size: 20px !important;
 }
 
 .kfItem {
@@ -1743,6 +1748,72 @@ input[type=color] {
 
 #curGameInfo {
     display: none;
+}
+
+#speedRunHolder {
+    right: 200px;
+    bottom: 78px;
+}
+
+#spdrnZC {
+    color: var(--accent) !important;
+}
+
+#speedRunInfo i {
+    margin-left: 8px !important;
+    color: var(--accent) !important;
+}
+
+#speedRunInfo {
+    position: fixed;
+    left: calc(50% + 64px);
+    width: max-content;
+    border-bottom: none;
+    display: block;
+    font-size: 32px;
+    bottom: 128px;
+    padding: 0;
+    margin: 0;
+    text-shadow: var(--hud-text-shadow);
+}
+
+#speedRunTimer {
+    position: fixed;
+    font-size: 48px;
+    bottom: 58px;
+    left: calc(50% + 64px);
+    color: var(--ammo);
+    text-shadow: var(--hud-text-shadow);
+    margin: 0;
+}
+
+#speedRunList * {
+    text-shadow: var(--hud-text-shadow);
+}
+
+.speedRunItem {
+    font-size: 24px;
+    color: #fff;
+}
+
+.speedRunITim {
+    font-size: 24px;
+}
+
+.sriAct {
+    background-color: transparent;
+    color: var(--accent) !important;
+}
+
+.speedRunItem {
+    font-size: 24px;
+    color: #fff;
+    border-color: #fff;
+    border-width: 4px;
+}
+
+#speedRunReset {
+    display: none !important;
 }
 
 /*End Screen*/
