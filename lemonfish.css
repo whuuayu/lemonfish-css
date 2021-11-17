@@ -1066,8 +1066,9 @@ input:checked+.sliderSml {
 
 .selctFavBtn {
     top: unset;
-    bottom: 16px;
+    bottom: 16px !important;
     right: 0;
+    font-size: 24px !important;
 }
 
 .selctInfoBtn {
