@@ -1774,6 +1774,10 @@ input[type=color] {
     top: 144px;
 }
 
+.teamTotals {
+    background-color: transparent;
+}
+
 .teamTotalN0, .teamTotalN1 {
     font-size: 28px;
 }
@@ -1834,6 +1838,11 @@ input[type=color] {
     padding: 16px;
 }
 
+#tabHolder {
+    background-color: transparent;
+    padding: 0 12px;
+}
+
 .tabHeader {
     font-size: 24px;
     color: #fff;
@@ -1846,7 +1855,7 @@ input[type=color] {
 
 #endTable {
     background-color: transparent;
-    padding: 0;
+    padding: 0 12px;
 }
 
 #endTable span[style="color:#F8C55C"] {
