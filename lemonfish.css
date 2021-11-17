@@ -616,6 +616,10 @@ input:checked+.sliderSml {
     color: var(--enemy);
 }
 
+#mapInfoHolder {
+    bottom: 36px;
+}
+
 .onMenu #infoHolder {
     display: none;
 }
@@ -1665,8 +1669,52 @@ input[type=color] {
     content: url(https://api.iconify.design/mdi/emoticon-dead.svg);
 }
 
+#endInfo {
+    top: 144px;
+}
+
+.teamTotalN0, .teamTotalN1 {
+    font-size: 28px;
+}
+
+.teamTotalScore {
+    font-size: 28px;
+}
+
+.teamWin0, .teamWin1 {
+    color: var(--accent) !important;
+}
+
+.matchVote {
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.matchVoteMap {
+    font-size: 20px;
+    color: var(--accent);
+}
+
+.matchVoteMode {
+    font-size: 16px;
+    height: unset;
+    color: #fff;
+}
+
+.matchVoteTotal {
+    height: unset;
+    font-size: 20px;
+    color: var(--accent) !important;
+}
+
+.matchVoteTotal[style="color: rgba(255, 255, 255, 0.7);"] {
+    color: #fff !important;
+}
+
 #endTimer {
-    position: absolute;
+    position: fixed;
     right: calc(100% - 36px);
     top: 200px;
     width: max-content;
