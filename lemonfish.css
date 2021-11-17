@@ -803,7 +803,7 @@ input:checked+.sliderSml {
 
 .xpBar {
     padding: 0;
-    min-height: 50px;
+    min-height: 54px;
     width: 100%;
 }
 
@@ -817,7 +817,7 @@ input:checked+.sliderSml {
     color: #000;
     text-align: left;
     left: 12px;
-    top: 10px;
+    top: 12px;
     font-size: 32px;
 }
 
