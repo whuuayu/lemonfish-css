@@ -742,6 +742,9 @@ input:checked+.sliderSml {
 
 .setBodH {
     padding: 0 12px;
+    margin-left: 0;
+    width: -webkit-fill-available;
+    background-color: transparent;
 }
 
 #profilePicM~.setBodH {
@@ -1001,6 +1004,87 @@ input:checked+.sliderSml {
     backdrop-filter: grayscale(1);
 }
 
+.custBack {
+    background-color: transparent;
+}
+
+.skinCard {
+    border: none !important;
+    border-bottom: 4px solid !important;
+    width: -webkit-fill-available;
+    background-color: transparent !important;
+    text-align: left;
+    font-size: 32px;
+    border-radius: 0;
+    height: 160px !important;
+    padding: 4px;
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+
+.skinCard[style*="292929"] {
+    text-shadow: var(--accent) 2px 0px 0px, var(--accent) 1.75517px 0.958851px 0px, var(--accent) 1.0806px 1.68294px 0px, var(--accent) 0.141474px 1.99499px 0px, var(--accent) -0.832294px 1.81859px 0px, var(--accent) -1.60229px 1.19694px 0px, var(--accent) -1.97999px 0.28224px 0px, var(--accent) -1.87291px -0.701566px 0px, var(--accent) -1.30729px -1.51361px 0px, var(--accent) -0.421592px -1.95506px 0px, var(--accent) 0.567324px -1.91785px 0px, var(--accent) 1.41734px -1.41108px 0px, var(--accent) 1.92034px -0.558831px 0px !important;
+    border-color: var(--accent) !important;
+}
+
+.itemOwn {
+    text-align: left;
+    font-size: 24px;
+}
+
+.itemSea {
+    text-align: left;
+    font-size: 24px;
+}
+
+.skinCard img {
+    float: right;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: unset;
+    height: 100%;
+}
+
+.lockedCard {
+    padding: 44px;
+    right: -1px;
+    bottom: 0;
+    text-align: right;
+}
+
+.skinRandom {
+    left: unset;
+    right: 60px;
+    top: -8px !important;
+    bottom: 0;
+    font-size: 60px;
+    line-height: 180px;
+    text-shadow: none;
+}
+
+.selctFavBtn {
+    top: unset;
+    bottom: 16px;
+    right: 0;
+}
+
+.selctInfoBtn {
+    background-color: transparent !important;
+    top: unset;
+    bottom: 12px;
+    right: 140px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.itemCnt[data-badge]:after {
+    top: 130px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
 /*Challenges*/
 
 .challHeadrI {
@@ -1021,6 +1105,12 @@ input:checked+.sliderSml {
     border: none !important;
     background-size: cover !important;
     background-position: center;
+}
+
+.challHeadrBck, .challHeadrS {
+    border-radius: 0;
+    background-color: transparent;
+    text-shadow: 0 0 8px #000;
 }
 
 .chalCard {
@@ -1123,12 +1213,6 @@ input:checked+.sliderSml {
 }
 
 /*Settings*/
-
-.setBodH {
-    padding: 0 12px;
-    margin-left: 0;
-    width: -webkit-fill-available;
-}
 
 .settingsHeader, .serverHeader, #itemSearchH {
     padding-left: 0;
