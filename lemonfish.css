@@ -160,6 +160,10 @@ a, a:active, a:visited {
     bottom: 54px !important;
 }
 
+#uiBase.onCompMenu #chatHolder {
+    bottom: 160px !important;
+}
+
 #chatList {
     background-color: transparent;
 }
@@ -1588,17 +1592,6 @@ input[type=color] {
     font-size: 64px;
 }
 
-#topMidHold {
-    transform: unset;
-    z-index: 1;
-    top: 120px;
-    text-shadow: var(--hud-text-shadow);
-}
-
-#roundsDisplay {
-    background-color: transparent;
-}
-
 .roundScrV {
     background-color: transparent;
     line-height: unset;
@@ -1675,16 +1668,41 @@ input[type=color] {
     color: var(--friendly) !important;
 }
 
-.roundScrV {
+#topMidHold {
+    transform: unset;
+    z-index: 1;
+    top: 120px;
+    text-shadow: var(--hud-text-shadow);
+}
+
+#roundsDisplay {
     background-color: transparent;
-    line-height: unset;
-    height: unset;
+    transform: unset;
+    will-change: auto;
+    margin: 0;
+}
+
+#compTimBox {
+    bottom: unset;
+    top: 240px;
+}
+
+#roundTSc1 {
+    position: fixed;
+    top: 40px;
+    right: calc(50% + 128px);
+}
+
+#roundTSc2 {
+    position: fixed;
+    top: 40px;
+    left: calc(50% + 128px);
 }
 
 #teamScores {
     position: fixed;
     left: 50%;
-    top: 160px;
+    top: 240px;
     transform: translateX(-50%);
     background-color: transparent;
     padding: 0;
@@ -2114,6 +2132,8 @@ td {
 
 .compClassPItm {
     border: none;
+    border-radius: 0;
+    background-color: transparent;
 }
 
 .compTScrB {
@@ -2123,6 +2143,43 @@ td {
 .compTScrB {
     background-color: transparent !important;
     text-shadow: none;
+}
+
+#compClassPHolder {
+    background-color: transparent;
+    padding: 0;
+    top: 52px;
+}
+
+#compInfBox {
+    right: 52px;
+    top: 48px;
+}
+
+#cmpPartnerImg {
+    display: none;
+}
+
+.cmpClassLck {
+    top: 20px;
+}
+
+#cmpDatBox {
+    border-radius: 0;
+    border-color: var(--accent);
+    font-size: 44px;
+}
+
+#cmpStatBarH {
+    border-radius: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+
+#cmpStatBarP {
+    border-radius: 0;
+    background-image: none;
+    background-color: var(--accent);
 }
 
 /*Section VII: Clients*/
