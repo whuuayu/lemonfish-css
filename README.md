@@ -9,4 +9,4 @@ a Krunker UI Theme by tae.
 
 ## License
 
-GNU 3.0
+GPL 3.0
