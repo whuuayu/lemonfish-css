@@ -1,8 +1,20 @@
-/*Install Instructions*/
-/*Right Click This Page and Click "Save Page As..."*/
+/*
+* LEMONFISH CSS
+* CSS by tae
+*
+* IGN: びこ
+* Site: https://whuuayu.github.io/krunker
+*
+* --Install Instructions--
+*   Right Click This Page and Click "Save Page As..."
+*
+* --Changelog and License Info--
+* https://github.com/whuuayu/lemonfish-css
+*
+*If you want to push an update or your name on the CSS, please consider donating <3
+*/
 
 /*The URL below is used for automatically updating the CSS, DO NOT TOUCH IT*/
-
 @import url(https://whuuayu.github.io/lemonfish-css/lemonfish.css);
 
 /*Customization Settings/設定*/
@@ -46,14 +58,5 @@
     font-family: dv;
     src: url(https://raw.githubusercontent.com/googlefonts/noto-fonts/main/archive/hinted/NotoSansDevanagari/NotoSansDevanagari-Black.ttf);
 }
-
-/*hi, this krunker css was made by tae.*/
-
-/*
-ign: びこ
-site: https://whuuayu.github.io/krunker
-*/
-
-/*If you want to push an update or your name on the CSS, please consider donating <3*/
 
 /*Add Personal Edits Below*/
