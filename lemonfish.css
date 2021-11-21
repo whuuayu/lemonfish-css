@@ -509,6 +509,9 @@ input:checked+.sliderSml {
 }
 
 #clientExit {
+    position: fixed;
+    bottom: 56px;
+    left: 258px;
     background-image: none;
 }
 
