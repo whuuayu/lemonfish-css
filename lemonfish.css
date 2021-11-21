@@ -509,10 +509,13 @@ input:checked+.sliderSml {
 }
 
 #clientExit {
-    position: absolute;
-    bottom: 16px;
-    left: 250px;
     background-image: none;
+}
+
+#menuBtnExit {
+    position: fixed;
+    bottom: 56px;
+    left: 280px;
 }
 
 #menuBtnExit {
