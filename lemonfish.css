@@ -1709,7 +1709,7 @@ input[type=color] {
 }
 
 #roundTSc1~div:not(.roundScrV) {
-    display: none !important;
+    margin: 0 !important;
 }
 
 #roundsVal {
