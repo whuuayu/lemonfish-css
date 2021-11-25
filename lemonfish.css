@@ -1600,12 +1600,6 @@ input[type=color] {
     font-size: 64px;
 }
 
-.roundScrV {
-    background-color: transparent;
-    line-height: unset;
-    height: unset;
-}
-
 #topRight {
     right: 52px;
     top: 58px;
@@ -1678,8 +1672,8 @@ input[type=color] {
 
 #topMidHold {
     transform: unset;
-    z-index: 1;
-    top: 120px;
+    z-index: 20;
+    top: 98px;
     text-shadow: var(--hud-text-shadow);
 }
 
@@ -1690,28 +1684,50 @@ input[type=color] {
     margin: 0;
 }
 
-#compTimBox {
-    bottom: unset;
-    top: 240px;
+.roundScrV {
+    background-color: transparent;
+    line-height: unset;
+    height: unset;
+    color: #fff;
+    text-shadow: var(--hud-text-shadow);
+    position: fixed;
+    top: 120px;
+    border: none !important;
+    font-size: 24px;
 }
 
 #roundTSc1 {
-    position: fixed;
-    top: 40px;
-    right: calc(50% + 128px);
+    right: calc(50% + 144px);
 }
 
 #roundTSc2 {
+    left: calc(50% + 144px);
+}
+
+#roundsVal {
     position: fixed;
-    top: 40px;
-    left: calc(50% + 128px);
+    right: 102px;
+    bottom: 96px;
+    transform: translateX(50%);
+}
+
+#roundSub {
+    font-size: 20px;
+    position: fixed;
+    right: 102px;
+    bottom: 74px;
+    transform: translateX(50%);
+}
+
+#gameMessage {
+    font-size: 24px;
 }
 
 #teamScores {
     position: fixed;
     left: 50%;
-    top: 240px;
-    transform: translateX(-50%);
+    top: 48px;
+    transform: translate(-50%);
     background-color: transparent;
     padding: 0;
 }
@@ -1721,6 +1737,8 @@ input[type=color] {
 }
 
 .tScoreC {
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: var(--enemy);
     box-shadow: var(--hud-text-shadow);
@@ -1728,12 +1746,12 @@ input[type=color] {
 
 #tScoreC1 {
     margin-right: 0;
-    margin-left: 10px;
+    margin-left: 16px;
 }
 
 .tScore:first-child {
     direction: rtl;
-    margin-right: 10px;
+    margin-right: 240px;
 }
 
 .tScoreT {
@@ -2136,6 +2154,11 @@ td {
 .compSwpTmB {
     background-color: transparent !important;
     border: none;
+}
+
+#compTimBox {
+    bottom: unset;
+    top: 240px;
 }
 
 .compClassPItm {
