@@ -1708,6 +1708,10 @@ input[type=color] {
     left: calc(50% + 144px);
 }
 
+#roundTSc1~div:not(.roundScrV) {
+    display: none !important;
+}
+
 #roundsVal {
     position: fixed;
     right: 102px;
