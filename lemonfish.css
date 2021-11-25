@@ -1625,6 +1625,10 @@ input[type=color] {
     color: var(--enemy) !important;
 }
 
+.newLeaderNameF, .leaderNameF, .endTableN {
+    color: var(--friendly);
+}
+
 .newLeaderContainer {
     background-color: rgba(0,0,0,0.75);
     border-radius: 0;
@@ -1747,6 +1751,10 @@ input[type=color] {
 #tScoreC1 {
     margin-right: 0;
     margin-left: 16px;
+}
+
+.tScoreC.you {
+    background-color: var(--friendly);
 }
 
 .tScore:first-child {
