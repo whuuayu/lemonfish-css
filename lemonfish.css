@@ -1748,17 +1748,18 @@ input[type=color] {
     display: flex !important;
 }
 
+.tScore {
+    position: absolute;
+    width: max-content;
+}
+
 .tScoreC {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: var(--enemy);
     box-shadow: var(--hud-text-shadow);
-}
-
-#tScoreC1 {
-    margin-right: 0;
-    margin-left: 16px;
+    margin: 0 16px;
 }
 
 .tScoreC.you {
@@ -1767,7 +1768,11 @@ input[type=color] {
 
 .tScore:first-child {
     direction: rtl;
-    margin-right: 240px;
+    right: calc(50% + 120px);
+}
+
+.tScore:nth-child(2) {
+    left: calc(50% + 120px);
 }
 
 .tScoreT {
