@@ -997,6 +997,7 @@ input:checked+.sliderSml {
 
 .className {
     color: var(--accent) !important;
+}
 
 .classImgC {
     width: unset;
