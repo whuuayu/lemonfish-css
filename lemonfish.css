@@ -913,7 +913,7 @@ input:checked+.sliderSml {
 }
 
 .selectorItem .selectorIcon {
-    width: 100%;
+    width: auto;
     height: 100%;
     margin-top: -20px;
 }
