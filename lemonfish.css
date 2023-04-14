@@ -2205,6 +2205,10 @@ td {
     padding: 0 !important;
 }
 
+#uiBase.onMenu #specMapOverlay {
+    display: none;
+}
+
 /*Section VI: Comp*/
 
 .cmpTmHed {
