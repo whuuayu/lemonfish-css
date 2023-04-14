@@ -582,6 +582,10 @@ input:checked+.sliderSml {
     padding: 0 12px;
 }
 
+#menuClassIcn {
+    display: none;
+}
+
 #menuClassNameTag {
     display: none;
 }
