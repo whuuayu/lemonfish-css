@@ -968,7 +968,7 @@ input:checked+.sliderSml {
     right: 12px;
     transform: translateY(-50%);
     text-shadow: none;
-    font-size: 0;
+    font-size: 0 !important;
 }
 
 .selRandom::after {
