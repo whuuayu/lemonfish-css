@@ -1,4 +1,4 @@
-/*Last Updated 2021-11-24*/
+/*Last Updated 2023-4-15*/
 
 /*Please DO NOT REUSE ANY of the CODE below without giving visible credit, thank you*/
 
@@ -31,6 +31,10 @@ a, a:active, a:visited {
 
 #aHolder, #endAContainer, #newsHolder, #seasonLabel, #ot-sdk-btn-floating.ot-floating-button {
     display: none !important;
+}
+
+#streamContainer {
+    display: none;
 }
 
 /*Animations*/
@@ -116,7 +120,7 @@ a, a:active, a:visited {
 }
 
 #loadInfoLHolder::before {
-    content: "Last Updated 2021-11-24";
+    content: "Last Updated 2023-4-15";
     font-size: 32px;
 }
 
@@ -291,6 +295,10 @@ div:last-child .chatItem {
     display: none;
 }
 
+#mainLogoFace {
+    display: none;
+}
+
 #instructionHolder {
     backdrop-filter: blur(4px) grayscale(1);
 }
@@ -317,17 +325,27 @@ div:last-child .chatItem {
     display: none;
 }
 
-#menuAccountUsername {
-    position: relative;
-    top: 4px;
-}
-
 #menuKRCount, #menuJNKCount {
     color: #fff;
 }
 
 #menuKRCount span, #menuJNKCount span {
     color: var(--accent) !important;
+}
+
+#signedInHeaderBar > div:not(#mLevelCont) {
+    display: flex !important;
+    align-items: center;
+}
+
+.krInfo, .junkInfo, #menuKRCount, #menuJNKCount {
+    vertical-align: unset;
+    margin: unset !important;
+}
+
+#mailIcon {
+    font-size: 32px !important;
+    vertical-align: sub;
 }
 
 #menuJNKCount .material-icons {
@@ -411,6 +429,22 @@ input:checked+.sliderSml {
     left: unset;
     right: 40px;
     transform: none;
+}
+
+#mapInfoHld {
+    position: fixed;
+    left: 54px;
+    top: 120px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 48px;
+}
+
+#mapInfo {
+    font-size: 48px;
+    color: var(--accent);
+    display: block;
 }
 
 #subLogoButtons>.button {
@@ -604,17 +638,6 @@ input:checked+.sliderSml {
 
 #bubbleContainer {
     display: none;
-}
-
-#policeButton {
-    position: absolute;
-    bottom: 0px;
-    right: calc(100% + 30px);
-    background-color: transparent;
-    border: none !important;
-    margin: 0;
-    height: auto !important;
-    width: auto !important;
 }
 
 #policeButton img {
@@ -2056,8 +2079,7 @@ td {
 }
 
 #uiBase.onMenu #specGameInfo {
-    font-size: 48px !important;
-    margin-top: 10px !important;
+    display: none;
 }
 
 #uiBase.onSpect #spectateHUD {
