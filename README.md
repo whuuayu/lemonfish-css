@@ -1,9 +1,9 @@
 # LEMONFISH
 a Krunker UI Theme by tae.
 
-## Update 2021-12-1
+## Update 2023-4-15
 
-- Minor Adjustments
+- Minor Adjustments and Fixes
 
 ## License
 
