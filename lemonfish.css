@@ -927,10 +927,6 @@ input:checked+.sliderSml {
     color: var(--accent) !important;
 }
 
-#customizeContainer {
-    width: calc(100% - 210px);
-}
-
 .custContainer {
     display: none;
     border-radius: 0;
@@ -987,9 +983,20 @@ input:checked+.sliderSml {
     background-color: transparent;
     margin: 0;
     width: 33.333%;
-    height: 240px;
+    height: fit-content;
     text-shadow: none;
+    box-shadow: none;
+    margin-bottom: 12px;
 }
+
+.className, .classWeap {
+    text-shadow: none;
+    left: 180px;
+    font-size: 24px;
+}
+
+.className {
+    color: var(--accent) !important;
 
 .classImgC {
     width: unset;
@@ -998,14 +1005,25 @@ input:checked+.sliderSml {
 }
 
 .classXPBar {
-    width: 160px;
+    width: 100%;
     border-radius: 0;
     height: 8px;
-    bottom: 22px;
+    bottom: 0;
     top: unset;
-    left: calc(50% - 80px);
+    left: 0;
+    background: transparent;
 }
 
+.clsXPBarV {
+    position: absolute;
+    left: 180px;
+    width: fit-content;
+    text-shadow: unset;
+    bottom: 32px;
+    top: unset;
+    font-size: 24px;
+}
+	
 .clsXPBarC {
     margin: 0;
     height: 8px;
@@ -1013,11 +1031,7 @@ input:checked+.sliderSml {
 }
 
 .classHP {
-    left: calc(50% - 80px);
-    top: unset;
-    bottom: 32px;
-    text-shadow: 0 0 4px rgba(0,0,0,0.75);
-    text-shadow: 20px;
+    display: none;
 }
 
 .classHP span {
@@ -1027,11 +1041,15 @@ input:checked+.sliderSml {
 
 .classLvl {
     top: unset;
-    bottom: 32px;
-    right: calc(50% - 80px);
+    bottom: 12px;
+    right: 20px;
+    left: unset;
     text-shadow: 0 0 4px rgba(0,0,0,0.75);
     text-transform: uppercase;
     font-size: 20px;
+    padding: 0;
+    color: var(--accent) !important;
+    font-size: 24px;
 }
 
 .lockedClass {
