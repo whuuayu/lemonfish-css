@@ -949,6 +949,15 @@ input:checked+.sliderSml {
     left: 12px;
 }
 
+.custItNm[style="font-size: 12px;"] {
+    font-size: 0 !important;
+}
+
+.custSubContainer {
+    border: none;
+    background-color: transparent;
+}
+
 .settLabel, .custLabel {
     left: 12px;
     bottom: 12px;
