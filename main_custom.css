@@ -38,14 +38,14 @@ If you want to push an update or your name on the CSS, please consider donating 
     --healthbar-opacity: 100; /*0 = invisible, 100 = max opacity*/
 }
 
-/*English Font*/
+/*Latin/русский*/
 
 @font-face {
     font-family: gamefont;
     src: url(https://raw.githubusercontent.com/Yadub/BoulderBox/master/fonts/Fontfabric---Mont-Heavy.otf);
 }
 
-/*日本語フォント*/
+/*日本語/中国文/한국어*/
 
 @font-face {
     font-family: jp;
