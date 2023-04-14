@@ -759,7 +759,7 @@ input:checked+.sliderSml {
     left: 0;
     top: 0;
     bottom: 0;
-    height: unset !imporant;
+    height: unset !important;
     width: calc(100% - 254px) !important;
     transform: unset !important;
     max-height: unset;
@@ -1075,6 +1075,10 @@ input:checked+.sliderSml {
 
 .custBack {
     background-color: transparent;
+}
+
+#skinList {
+    height: 100% !important;
 }
 
 .skinCard {
