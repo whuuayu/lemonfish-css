@@ -627,6 +627,7 @@ input:checked+.sliderSml {
     text-shadow: none;
     font-size: 48px;
     position: absolute;
+    right: 0;
     bottom: 100%;
     width: max-content;
     text-transform: uppercase;
