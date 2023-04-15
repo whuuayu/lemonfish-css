@@ -299,7 +299,7 @@ div:last-child .chatItem {
     display: none;
 }
 
-#uiBase.onMenu #instructionHolder {
+#instructionHolder {
     backdrop-filter: blur(4px) grayscale(1);
 }
 
@@ -701,7 +701,7 @@ input:checked+.sliderSml {
 
 /*Menu Window*/
 
-#uiBase.onMenu #windowHolder {
+#windowHolder {
     background-image: linear-gradient(90deg, transparent calc(100% - 140px), var(--accent)calc(100% - 140px));
     backdrop-filter: blur(4px);
 }
@@ -1069,7 +1069,7 @@ input:checked+.sliderSml {
     font-size: 24px;
 }
 
-#uiBase.onMenu .lockedClass {
+.lockedClass {
     left: 0;
     right: 0;
     top: 0;
@@ -1309,7 +1309,7 @@ input:checked+.sliderSml {
 
 /*Settings*/
 
-#uiBase.onMenu .settingsHeader, .serverHeader, #itemSearchH {
+.settingsHeader, .serverHeader, #itemSearchH {
     padding-left: 0;
     background-color: transparent;
     backdrop-filter: blur(4px);
