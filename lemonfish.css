@@ -980,6 +980,7 @@ input:checked+.sliderSml {
     transform: translateY(-50%);
     text-shadow: none;
     font-size: 0 !important;
+    transition-duration: 0.15s;
 }
 
 .selRandom::after {
@@ -987,6 +988,10 @@ input:checked+.sliderSml {
     font-size: 48px;
     -webkit-text-stroke: 8px;
     color: var(--accent);
+}
+
+.custSubContainer:hover .selRandom {
+    opacity: 0.5;
 }
 
 .classCard {
