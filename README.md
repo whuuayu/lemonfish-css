@@ -2,7 +2,7 @@
 
 a Krunker UI Theme by tae.
 
-## Update 2024-2x-1
+## Update 2024-24-1
 
 - Fixed bugs
 - Removed new ad containers
