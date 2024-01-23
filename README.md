@@ -1,5 +1,12 @@
 # LEMONFISH
+
 a Krunker UI Theme by tae.
+
+## Update 2024-2x-1
+
+- Fixed bugs
+- Removed new ad containers
+- Performance Optimizations
 
 ## Update 2023-4-15
 
