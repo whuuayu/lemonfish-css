@@ -9,6 +9,8 @@ a Krunker UI Theme by tae.
 - Removed new ad containers
 - Performance Optimizations
 
+(Thank you, Envy ^   ^)
+
 ## License
 
 GPL 3.0
