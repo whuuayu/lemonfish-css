@@ -5,7 +5,7 @@ a Krunker UI Theme by tae.
 
 ## Latest Update 2024-24-1
 
-- Fixed bugs
+- Fixed bugs and issues pertaining to Season 7 UI changes
 - Removed new ad containers
 - Performance Optimizations
 
