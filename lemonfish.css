@@ -1491,6 +1491,7 @@ input[type="color"] {
 
 #uiBase.onGame #chatList,
 #healthValue,
+#bottomLeftHealth,
 #ammoVal,
 #topRight *,
 #topLeftHolder * {
@@ -1791,6 +1792,19 @@ input[type="color"] {
   font-size: 64px;
 }
 
+}
+#timerHolder.topLeftOld {
+    background-color: transparent;
+}
+
+#timerInner.topLeftOld {
+    background-color: transparent;
+}
+
+#timerIcon.topLeftOld {
+    display: none;
+}
+
 #topRight {
   right: 52px;
   top: 58px;
@@ -1985,6 +1999,10 @@ input[type="color"] {
 #topLeftHolder {
   left: 52px;
   top: 58px;
+}
+
+.debugInfo {
+    text-align: left;
 }
 
 #pingDisplay,
