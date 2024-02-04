@@ -1,10 +1,4 @@
-/*Last Updated 2024-1-24 */
-
-/* fixed by envyxyz7
-discord: envyxyz7
-twitter: @envyxyz7
-github: envyxyz
-*/
+/*Last Updated 2024-2-4 */
 
 /*Please DO NOT REUSE ANY of the CODE below without giving visible credit, thank you*/
 
@@ -236,7 +230,8 @@ div:last-child .chatItem {
   margin: 0;
 }
 
-#voiceDisplay {
+#voiceDisplay,
+.greyInlineInnerMid {
   background-color: transparent;
   border: none;
 }
@@ -253,7 +248,8 @@ div:last-child .chatItem {
   color: transparent !important;
 }
 
-#recTimer {
+#recTimer,
+.greyInlineInner {
   display: none;
 }
 
@@ -267,6 +263,16 @@ div:last-child .chatItem {
   margin: 0;
   width: -webkit-fill-available;
   transition-duration: 0.25s;
+}
+
+#uiBase.onMenu .greyInlineInnerMid {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.greyInlineInnerMid {
+  width: 100%;
+  margin-left: -15px;
 }
 
 #chatInput::placeholder {
@@ -1386,7 +1392,8 @@ input:checked + .sliderSml {
 }
 
 .settingsBtn,
-.loadoutBtn {
+.loadoutBtn,
+.hostPresetBtn {
   color: #000 !important;
   font-size: 16px;
   padding: 8px;
@@ -1394,6 +1401,10 @@ input:checked + .sliderSml {
   border-radius: 0;
   background-color: var(--accent);
   width: max-content;
+}
+
+#presetName {
+  margin-top: 10px !important;
 }
 
 #settSearch {
@@ -1507,11 +1518,12 @@ input[type="color"] {
 }
 
 #challIcon,
-#maxHP {
+#maxHP,
+#bottomLeftChallIcon {
   display: none;
 }
 
-#hudClassIcon {
+#bottomLeftClassImg {
   position: fixed;
   bottom: 76px;
   right: 52px;
@@ -1525,11 +1537,23 @@ input[type="color"] {
   border-radius: 0;
 }
 
-#healthBar {
+#bottomLeftTeamHolder {
+  position: fixed;
+  bottom: 76px;
+  left: 52px;
+  font-size: 18px !important;
+  display: none;
+}
+
+#bottomLeftTeamHolder * {
+  font-size: inherit;
+}
+
+#bottomLeftHealthBar {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 99.1%;
   height: 24px;
   display: flex;
   justify-content: space-between;
@@ -1537,23 +1561,28 @@ input[type="color"] {
   opacity: calc(var(--healthbar-opacity) * 0.01);
 }
 
-.healthBarSeg {
+.nHealthBarSeg {
   border-radius: 0;
   background-color: transparent;
-  margin: 0 -1px;
+  margin: 0 -1.51361px;
   width: -webkit-fill-available;
 }
 
-.hpBSeg {
+.nHpBSeg {
   border-radius: 0;
   box-shadow: none;
 }
 
-#healthValueHolder {
+#healthValueHolder,
+.greyInner,
+#ammoHolder,
+#bottomLeftPlayer,
+#bottomLeftPlayer div {
   background-color: transparent;
+  border: hidden;
 }
 
-#healthValue {
+#bottomLeftHealth {
   position: fixed;
   right: calc(50% + 64px);
   bottom: 30px;
@@ -1561,7 +1590,7 @@ input[type="color"] {
   color: var(--health);
 }
 
-#ammoDisplay {
+#ammoHolder {
   transform: unset;
   letter-spacing: unset;
 }
@@ -1579,17 +1608,17 @@ input[type="color"] {
   color: var(--ammo);
 }
 
-#ammoDisplay {
+#ammoHolder {
   transform: unset;
   letter-spacing: unset;
   position: fixed;
   left: calc(50% - 32px);
-  height: 8px;
+  height: 6px;
   padding: 0;
   width: 64px;
   bottom: calc(50% - 32px);
-  border-radius: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(var(--accent), var(--accent));
 }
 
@@ -1604,6 +1633,11 @@ input[type="color"] {
   text-shadow: var(--hud-text-shadow);
 }
 
+.weapItemInner,
+.weapItem {
+  background-color: transparent !important;
+}
+
 .weapIcon {
   margin: 0 !important;
   height: 64px;
@@ -1614,11 +1648,12 @@ input[type="color"] {
   transform: translateX(-50%);
 }
 
-.weapKey {
+.weapKey,
+.weapSkin {
   display: none;
 }
 
-.weapIcon[style*=".7"] {
+.weapItem[style*=".5"] {
   opacity: 0 !important;
 }
 
@@ -1736,7 +1771,7 @@ input[type="color"] {
   background-color: transparent;
 }
 
-#timerDisplay {
+#timerHolder {
   position: fixed;
   left: 50%;
   top: 40px;
@@ -1760,10 +1795,14 @@ input[type="color"] {
   top: 58px;
 }
 
-#leaderDisplay {
+#leaderboardHolder {
   background-color: transparent;
   padding: 0 10px;
   width: 360px;
+}
+
+#leaderContainer {
+  background-color: transparent;
 }
 
 .leaderItem {
@@ -1797,7 +1836,7 @@ input[type="color"] {
   font-size: 24px;
 }
 
-.countIcon {
+.statIcon {
   font-size: 24px;
   background-color: transparent;
   color: #fff;
@@ -1811,7 +1850,7 @@ input[type="color"] {
   width: 20px;
 }
 
-.countIcon i {
+.statIcon i {
   font-size: 20px !important;
 }
 
@@ -1983,7 +2022,7 @@ input[type="color"] {
   color: var(--good) !important;
 }
 
-#curGameInfo {
+#matchInfo {
   display: none;
 }
 
