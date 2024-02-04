@@ -772,6 +772,7 @@ input:checked + .sliderSml {
   right: 52px;
   font-size: 48px;
   -webkit-text-stroke: 8px;
+  color: #000;
 }
 
 #windowHolder {
