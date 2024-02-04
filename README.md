@@ -1,17 +1,15 @@
-# LEMONFISH
+![LFBanner](https://github.com/whuuayu/lemonfish-css/assets/91711751/ef47e54a-9b6c-4b1d-af63-2d9d7d8912a7)
+
 
 a Krunker UI Theme by tae.
 
-## Update 2024-24-1
+## Latest Update 2024-24-1
 
-- Fixed bugs
+- Fixed bugs and issues pertaining to Season 7 UI changes
 - Removed new ad containers
 - Performance Optimizations
 
-## Update 2023-4-15
-
-- Minor Adjustments and Fixes
-- Minor Performance Optimizations
+(Thank you, Envy ^   ^)
 
 ## License
 
