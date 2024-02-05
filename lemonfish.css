@@ -1794,8 +1794,9 @@ input[type="color"] {
 }
 
 }
+
 #timerHolder.topLeftOld {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 #timerInner.topLeftOld {
@@ -1803,6 +1804,10 @@ input[type="color"] {
 }
 
 #timerIcon.topLeftOld {
+    display: none;
+}
+
+#matchInfo.topLeftOld {
     display: none;
 }
 
