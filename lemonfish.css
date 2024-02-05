@@ -1807,6 +1807,11 @@ input[type="color"] {
     display: none;
 }
 
+#timerVal.topLeftOld {
+  padding: 0 !important;
+  font-size: 64px !important;
+}
+
 #matchInfo.topLeftOld {
     display: none;
 }
