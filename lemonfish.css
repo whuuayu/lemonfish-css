@@ -1800,7 +1800,7 @@ input[type="color"] {
 }
 
 #timerInner.topLeftOld {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 #timerIcon.topLeftOld {
