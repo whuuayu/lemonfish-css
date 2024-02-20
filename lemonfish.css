@@ -1793,14 +1793,15 @@ input[type="color"] {
   font-size: 64px;
 }
 
-}
-
 #timerHolder.topLeftOld {
-    background-color: transparent !important;
+    margin: 0 !important;
+    background-color: transparent;
 }
 
 #timerInner.topLeftOld {
     background-color: transparent !important;
+    padding: 0;
+    margin: 0 !important;
 }
 
 #timerIcon.topLeftOld {
